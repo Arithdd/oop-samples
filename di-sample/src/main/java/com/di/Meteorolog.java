@@ -1,21 +1,21 @@
 package com.di;
 
-// Клас Employee, що реалізує Person і BonusEligible
-public class Employee extends Person implements BonusEligible {
+// Клас Meteorolog, що реалізує Person і BonusEligible
+public class Meteorolog extends Person implements BonusEligible {
     private double bonus;
 
     // Конструктори
-    public Employee() {
+    public Meteorolog() {
         super();
         this.bonus = DEFAULT_BONUS; // Встановити бонус за замовчуванням
     }
 
-    public Employee(String name) {
+    public Meteorolog(String name) {
         super(name);
         this.bonus = DEFAULT_BONUS; // Встановити бонус за замовчуванням
     }
 
-    public Employee(String name, double bonus) {
+    public Meteorolog(String name, double bonus) {
         super(name);
         setBonus(bonus); // Встановити бонус через метод-сетер
     }
